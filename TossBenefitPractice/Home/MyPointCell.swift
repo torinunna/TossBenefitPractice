@@ -10,4 +10,7 @@ import UIKit
 class MyPointCell: UICollectionViewCell {
     static let identifier = "MyPointCell"
     
+    func configure(item: MyPoint) {
+        
+    }
 }

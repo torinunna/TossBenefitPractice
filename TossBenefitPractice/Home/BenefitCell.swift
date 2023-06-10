@@ -9,4 +9,8 @@ import UIKit
 
 class BenefitCell: UICollectionViewCell {
     static let identifier = "BenefitCell"
+    
+    func configure(item: Benefit) {
+        
+    }
 }

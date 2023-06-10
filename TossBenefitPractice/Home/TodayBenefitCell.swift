@@ -9,4 +9,8 @@ import UIKit
 
 class TodayBenefitCell: UICollectionViewCell {
     static let identifier = "TodayBenefitCell"
+    
+    func configure(item: Benefit) {
+        
+    }
 }
