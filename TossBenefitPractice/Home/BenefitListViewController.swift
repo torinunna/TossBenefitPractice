@@ -38,6 +38,8 @@ class BenefitListViewController: UIViewController {
         snapshot.appendItems(todaySectionItems, toSection: .today)
         snapshot.appendItems(otherSectionItems, toSection: .other)
         datasource.apply(snapshot)
+        
+        collectionView.collectionViewLayout = layout()
     }
     
     private func configureCell(for section: Section, item: Item, collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell? {
@@ -63,6 +65,21 @@ class BenefitListViewController: UIViewController {
                 return nil
             }
         }
+    }
+    
+    private func layout() -> UICollectionViewCompositionalLayout {
+        let spacing: CGFloat = 10.0
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(60))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(60))
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+        group.interItemSpacing = .fixed(spacing)
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16)
+        section.interGroupSpacing = spacing
+        
+        return UICollectionViewCompositionalLayout(section: section)
     }
     
 }
