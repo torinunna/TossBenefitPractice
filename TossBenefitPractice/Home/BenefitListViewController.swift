@@ -32,6 +32,12 @@ class BenefitListViewController: UIViewController {
             let cell = self.configureCell(for: section, item: item, collectionView: collectionView, indexPath: indexPath)
             return cell
         })
+        
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+        snapshot.appendSections([.today, .other])
+        snapshot.appendItems(todaySectionItems, toSection: .today)
+        snapshot.appendItems(otherSectionItems, toSection: .other)
+        datasource.apply(snapshot)
     }
     
     private func configureCell(for section: Section, item: Item, collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell? {
