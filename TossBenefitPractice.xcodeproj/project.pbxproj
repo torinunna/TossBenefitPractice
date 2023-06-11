@@ -71,8 +71,8 @@
 		8618EF582A359ABB00A6739A /* Benefit */ = {
 			isa = PBXGroup;
 			children = (
-				8618EF542A359AAE00A6739A /* ButtonBenefitViewController.swift */,
 				8618EF562A359AB400A6739A /* ButtonBenefit.storyboard */,
+				8618EF542A359AAE00A6739A /* ButtonBenefitViewController.swift */,
 			);
 			path = Benefit;
 			sourceTree = "<group>";
@@ -99,8 +99,8 @@
 				86D77FD72A2F620A00AAA543 /* AppDelegate.swift */,
 				86D77FD92A2F620A00AAA543 /* SceneDelegate.swift */,
 				86E2C2132A33205B00F6267F /* Home */,
-				8618EF582A359ABB00A6739A /* Benefit */,
 				8618EF532A35901500A6739A /* MyPoint */,
+				8618EF582A359ABB00A6739A /* Benefit */,
 				86E2C2122A33204A00F6267F /* Model */,
 				86D77FE02A2F620C00AAA543 /* Assets.xcassets */,
 				86D77FE22A2F620C00AAA543 /* LaunchScreen.storyboard */,
