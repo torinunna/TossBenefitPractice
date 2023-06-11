@@ -12,6 +12,7 @@
 		8618EF552A359AAE00A6739A /* ButtonBenefitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618EF542A359AAE00A6739A /* ButtonBenefitViewController.swift */; };
 		8618EF572A359AB400A6739A /* ButtonBenefit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8618EF562A359AB400A6739A /* ButtonBenefit.storyboard */; };
 		8618EF5A2A359B3900A6739A /* BenefitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618EF592A359B3900A6739A /* BenefitDetails.swift */; };
+		8618EF5C2A35B04A00A6739A /* BenefitGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618EF5B2A35B04A00A6739A /* BenefitGuideView.swift */; };
 		86D77FD82A2F620A00AAA543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D77FD72A2F620A00AAA543 /* AppDelegate.swift */; };
 		86D77FDA2A2F620A00AAA543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D77FD92A2F620A00AAA543 /* SceneDelegate.swift */; };
 		86D77FDF2A2F620A00AAA543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D77FDD2A2F620A00AAA543 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		8618EF542A359AAE00A6739A /* ButtonBenefitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBenefitViewController.swift; sourceTree = "<group>"; };
 		8618EF562A359AB400A6739A /* ButtonBenefit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ButtonBenefit.storyboard; sourceTree = "<group>"; };
 		8618EF592A359B3900A6739A /* BenefitDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitDetails.swift; sourceTree = "<group>"; };
+		8618EF5B2A35B04A00A6739A /* BenefitGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitGuideView.swift; sourceTree = "<group>"; };
 		86D77FD42A2F620A00AAA543 /* TossBenefitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossBenefitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D77FD72A2F620A00AAA543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D77FD92A2F620A00AAA543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				8618EF562A359AB400A6739A /* ButtonBenefit.storyboard */,
 				8618EF542A359AAE00A6739A /* ButtonBenefitViewController.swift */,
+				8618EF5B2A35B04A00A6739A /* BenefitGuideView.swift */,
 			);
 			path = Benefit;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				86D77FDA2A2F620A00AAA543 /* SceneDelegate.swift in Sources */,
 				8618EF5A2A359B3900A6739A /* BenefitDetails.swift in Sources */,
 				8618EF522A35900E00A6739A /* MyPointViewController.swift in Sources */,
+				8618EF5C2A35B04A00A6739A /* BenefitGuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
