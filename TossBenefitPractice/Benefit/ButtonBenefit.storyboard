@@ -88,6 +88,9 @@
                             <constraint firstItem="mKo-pt-HNP" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="v5L-hf-XBn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ctaButton" destination="mKo-pt-HNP" id="dPY-8a-XFm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

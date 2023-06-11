@@ -8,13 +8,16 @@
 import UIKit
 
 class ButtonBenefitViewController: UIViewController {
-
+    @IBOutlet weak var ctaButton: UIButton!
+    
     var benefit: Benefit = .today
     var benefitDetails: BenefitDetails = .default
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
+        ctaButton.layer.masksToBounds = true
+        ctaButton.layer.cornerRadius = 5
     }
 
 }
