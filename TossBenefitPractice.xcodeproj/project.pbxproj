@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8618EF502A358FFA00A6739A /* MyPoint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8618EF4F2A358FFA00A6739A /* MyPoint.storyboard */; };
+		8618EF522A35900E00A6739A /* MyPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618EF512A35900E00A6739A /* MyPointViewController.swift */; };
 		86D77FD82A2F620A00AAA543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D77FD72A2F620A00AAA543 /* AppDelegate.swift */; };
 		86D77FDA2A2F620A00AAA543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D77FD92A2F620A00AAA543 /* SceneDelegate.swift */; };
 		86D77FDF2A2F620A00AAA543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D77FDD2A2F620A00AAA543 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8618EF4F2A358FFA00A6739A /* MyPoint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPoint.storyboard; sourceTree = "<group>"; };
+		8618EF512A35900E00A6739A /* MyPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointViewController.swift; sourceTree = "<group>"; };
 		86D77FD42A2F620A00AAA543 /* TossBenefitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossBenefitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D77FD72A2F620A00AAA543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D77FD92A2F620A00AAA543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8618EF532A35901500A6739A /* MyPoint */ = {
+			isa = PBXGroup;
+			children = (
+				8618EF4F2A358FFA00A6739A /* MyPoint.storyboard */,
+				8618EF512A35900E00A6739A /* MyPointViewController.swift */,
+			);
+			path = MyPoint;
+			sourceTree = "<group>";
+		};
 		86D77FCB2A2F620A00AAA543 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +84,7 @@
 				86D77FD72A2F620A00AAA543 /* AppDelegate.swift */,
 				86D77FD92A2F620A00AAA543 /* SceneDelegate.swift */,
 				86E2C2132A33205B00F6267F /* Home */,
+				8618EF532A35901500A6739A /* MyPoint */,
 				86E2C2122A33204A00F6267F /* Model */,
 				86D77FE02A2F620C00AAA543 /* Assets.xcassets */,
 				86D77FE22A2F620C00AAA543 /* LaunchScreen.storyboard */,
@@ -160,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D77FE42A2F620C00AAA543 /* LaunchScreen.storyboard in Resources */,
+				8618EF502A358FFA00A6739A /* MyPoint.storyboard in Resources */,
 				86D77FE12A2F620C00AAA543 /* Assets.xcassets in Resources */,
 				86D77FDF2A2F620A00AAA543 /* Main.storyboard in Resources */,
 			);
@@ -181,6 +196,7 @@
 				86D77FD82A2F620A00AAA543 /* AppDelegate.swift in Sources */,
 				86E2C2152A3322FE00F6267F /* MyPointCell.swift in Sources */,
 				86D77FDA2A2F620A00AAA543 /* SceneDelegate.swift in Sources */,
+				8618EF522A35900E00A6739A /* MyPointViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
