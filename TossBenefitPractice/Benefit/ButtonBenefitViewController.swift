@@ -18,6 +18,8 @@ class ButtonBenefitViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
         ctaButton.layer.masksToBounds = true
         ctaButton.layer.cornerRadius = 5
+        
+        ctaButton.setTitle(benefit.ctaTitle, for: .normal)
     }
 
 }
