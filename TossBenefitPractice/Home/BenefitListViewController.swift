@@ -40,6 +40,8 @@ class BenefitListViewController: UIViewController {
         datasource.apply(snapshot)
         
         collectionView.collectionViewLayout = layout()
+        
+        collectionView.delegate = self
     }
     
     private func configureCell(for section: Section, item: Item, collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell? {
@@ -82,4 +84,21 @@ class BenefitListViewController: UIViewController {
         return UICollectionViewCompositionalLayout(section: section)
     }
     
+}
+
+extension BenefitListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = datasource.itemIdentifier(for: indexPath)
+        
+        if let benefit = item as? Benefit {
+            
+        } else if let point = item as? MyPoint {
+            let sb = UIStoryboard(name: "MyPoint", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "MyPointViewController") as! MyPointViewController
+            vc.point = point
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            
+        }
+    }
 }
