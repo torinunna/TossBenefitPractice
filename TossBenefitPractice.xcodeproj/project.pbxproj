@@ -14,6 +14,7 @@
 		8618EF5A2A359B3900A6739A /* BenefitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618EF592A359B3900A6739A /* BenefitDetails.swift */; };
 		8618EF5C2A35B04A00A6739A /* BenefitGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618EF5B2A35B04A00A6739A /* BenefitGuideView.swift */; };
 		8618EF5E2A36EA8D00A6739A /* BenefitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618EF5D2A36EA8D00A6739A /* BenefitListViewModel.swift */; };
+		8618EF602A36ED3300A6739A /* MyPoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618EF5F2A36ED3300A6739A /* MyPoinViewModel.swift */; };
 		86D77FD82A2F620A00AAA543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D77FD72A2F620A00AAA543 /* AppDelegate.swift */; };
 		86D77FDA2A2F620A00AAA543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D77FD92A2F620A00AAA543 /* SceneDelegate.swift */; };
 		86D77FDF2A2F620A00AAA543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D77FDD2A2F620A00AAA543 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		8618EF592A359B3900A6739A /* BenefitDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitDetails.swift; sourceTree = "<group>"; };
 		8618EF5B2A35B04A00A6739A /* BenefitGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitGuideView.swift; sourceTree = "<group>"; };
 		8618EF5D2A36EA8D00A6739A /* BenefitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitListViewModel.swift; sourceTree = "<group>"; };
+		8618EF5F2A36ED3300A6739A /* MyPoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPoinViewModel.swift; sourceTree = "<group>"; };
 		86D77FD42A2F620A00AAA543 /* TossBenefitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossBenefitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D77FD72A2F620A00AAA543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D77FD92A2F620A00AAA543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				8618EF4F2A358FFA00A6739A /* MyPoint.storyboard */,
 				8618EF512A35900E00A6739A /* MyPointViewController.swift */,
+				8618EF5F2A36ED3300A6739A /* MyPoinViewModel.swift */,
 			);
 			path = MyPoint;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				8618EF5A2A359B3900A6739A /* BenefitDetails.swift in Sources */,
 				8618EF522A35900E00A6739A /* MyPointViewController.swift in Sources */,
 				8618EF5C2A35B04A00A6739A /* BenefitGuideView.swift in Sources */,
+				8618EF602A36ED3300A6739A /* MyPoinViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
