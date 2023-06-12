@@ -28,8 +28,16 @@ class BenefitListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        configureCollectionView()
+        bind()
+    }
+    
+    private func setupUI() {
         navigationItem.title = "혜택"
-        
+    }
+    
+    private func configureCollectionView() {
         datasource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
             guard let section = Section(rawValue: indexPath.section) else { return nil }
             let cell = self.configureCell(for: section, item: item, collectionView: collectionView, indexPath: indexPath)
@@ -45,8 +53,6 @@ class BenefitListViewController: UIViewController {
         collectionView.collectionViewLayout = layout()
         
         collectionView.delegate = self
-        
-        bind()
     }
     
     override func viewDidAppear(_ animated: Bool) {
