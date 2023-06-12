@@ -67,21 +67,21 @@ class BenefitListViewController: UIViewController {
                 self.applySnapshot(items: items, section: .other)
             }.store(in: &subscriptions)
         
-        viewModel.benefitDidTapped
-            .receive(on: RunLoop.main)
-            .sink { benefit in
-                let sb = UIStoryboard(name: "ButtonBenefit", bundle: nil)
-                let vc = sb.instantiateViewController(withIdentifier: "ButtonBenefitViewController") as! ButtonBenefitViewController
-                vc.benefit = benefit
-                self.navigationController?.pushViewController(vc, animated: true)
-            }.store(in: &subscriptions)
-        
         viewModel.pointDidTapped
             .receive(on: RunLoop.main)
             .sink { point in
                 let sb = UIStoryboard(name: "MyPoint", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "MyPointViewController") as! MyPointViewController
                 vc.viewModel = MyPoinViewModel(point: point)
+                self.navigationController?.pushViewController(vc, animated: true)
+            }.store(in: &subscriptions)
+        
+        viewModel.benefitDidTapped
+            .receive(on: RunLoop.main)
+            .sink { benefit in
+                let sb = UIStoryboard(name: "ButtonBenefit", bundle: nil)
+                let vc = sb.instantiateViewController(withIdentifier: "ButtonBenefitViewController") as! ButtonBenefitViewController
+                vc.viewModel = ButtonBenefitViewModel(benefit: benefit)
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscriptions)
     }
